@@ -20,6 +20,8 @@
 %!postproc(md): 'LINEBREAK' ''
 %!postproc(md): '\|--------' '|-----|---'
 %!postproc(md): 'png\)\[(.*?)\]' 'png)'
+%!postproc(md): 'SIMPLELINE' '------'
+
 
 %!includeconf: /usr/share/textallion//core/textallion.t2t
 
