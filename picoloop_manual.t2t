@@ -18,6 +18,8 @@ yoyz
 
 %!preproc(md): '\{....\}' ''
 %!postproc(md): 'LINEBREAK' ''
+%!postproc(md): '\|--------' '|-----|---'
+%!postproc(md): 'png\)\[(.*?)\]' 'png)'
 
 %!includeconf: /usr/share/textallion//core/textallion.t2t
 
@@ -197,9 +199,12 @@ On some less powerful machines, the high ressources engines are not enabled.
 
 === Other commands ===
 
+|| Volume |   |
 | @SELECT@+@UP@ | Increase volume |
 | @SELECT@+@DOWN@ | Decrease volume |
 
 
 Get picoloop at https://github.com/yoyz/audio/
+
+
 
