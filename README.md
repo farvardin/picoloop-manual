@@ -106,7 +106,7 @@ On some less powerful machines, the high ressources engines are not enabled.
  ![](images/picoloop.png)[25]
 
 | Menu mode ||
-|---------------|
+|-------|--------|
 |← / → |move backward/forward in the menu|
 |↑ / ↓ |select the track from 0 to track 3|
 |Alt |do nothing|
@@ -117,7 +117,7 @@ On some less powerful machines, the high ressources engines are not enabled.
 |ESC |call menu2 or menu1|
 
 | Edit mode ||
-|---------------|
+|-------|--------|
 |← / → |select next step|
 |↑ / ↓ |select step+4, step-4|
 |Alt |enter a note in a step, it works as a cut/paste|
@@ -131,19 +131,19 @@ On some less powerful machines, the high ressources engines are not enabled.
 #### L/S menu 
 
 | Bank ||
-|---------------|
+|-------|--------|
 |Alt + ↓ |Save the current track on the selected slot|
 |Ctrl + ↓ |Save your current pattern (group of 4 tracks)|
 |Alt + ↑ |Load a track (replace current)|
 |Ctrl + ↑ |Load a 4 tracks pattern|
 | Song position ||
-|---------------|
+|------|---------|
 |Ctrl + ↑ |Define Loop start position|
 |Ctrl + ↓ |Define Loop end position|
 |Alt + ↑/↓ |Change the values|
 
 | PSH menu ||
-|---------------|
+|-------|--------|
 |Ctrl+↑ |Increase the track size (16 steps block)|
 |Ctrl+↓ |Decrease the track size (16 steps block)|
 |Ctrl+→ |Increase the track size (1 step)|
