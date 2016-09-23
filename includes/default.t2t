@@ -1,0 +1,30 @@
+
+
+
+%!preproc(tex): @B@ @@Ovalbox((Alt))
+%!preproc(tex): @A@ @@Ovalbox((Ctrl))
+%!preproc(tex): @SELECT@ @@Ovalbox((ESC))
+%!preproc(tex): @START@ @@Ovalbox((Enter))
+%!preproc(tex): @LSH@ @@Ovalbox((TAB))
+%!preproc(tex): @RSH@ @@Ovalbox((Backspace))
+
+%!postproc: @B@ Alt
+%!postproc: @A@ Ctrl
+%!postproc: @SELECT@ ESC
+%!postproc: @START@ Enter
+%!postproc: @LSH@ TAB
+%!postproc: @RSH@ Backspace
+
+% marche pas :
+%-!postproc: @UP@ ⇧
+%-!postproc: @DOWN@ ⇩
+%-!postproc: @LEFT@ ⇦
+%-!postproc: @RIGHT@ ⇨
+
+%!postproc: @UP@ ↑
+%!postproc: @DOWN@ ↓
+%!postproc: @LEFT@ ←
+%!postproc: @RIGHT@ →
+
+%!postproc: @MACHINE@ PC
+

@@ -1,0 +1,22 @@
+
+
+%!preproc(tex): @B@ @@Ovalbox((Right Ctrl))
+%!preproc(tex): @A@ @@Ovalbox((Right Shift))
+%!preproc(tex): @SELECT@ @@Ovalbox((ESC))
+%!preproc(tex): @START@ @@Ovalbox((Enter))
+%!preproc(tex): @LSH@ @@Ovalbox((TAB))
+%!preproc(tex): @RSH@ @@Ovalbox((Backspace))
+
+%!postproc: @B@ Right Ctrl
+%!postproc: @A@ Right Shift
+%!postproc: @SELECT@ ESC
+%!postproc: @START@ Enter
+%!postproc: @LSH@ TAB
+%!postproc: @RSH@ Backspace
+
+%!postproc: @UP@ ↑
+%!postproc: @DOWN@ ↓
+%!postproc: @LEFT@ ←
+%!postproc: @RIGHT@ →
+
+%!postproc: @MACHINE@ PocketChip

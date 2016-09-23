@@ -1,0 +1,22 @@
+
+
+%!preproc(tex): @B@ @@Ovalbox((B))
+%!preproc(tex): @A@ @@Ovalbox((A))
+%!preproc(tex): @SELECT@ @@Ovalbox((Select))
+%!preproc(tex): @START@ @@Ovalbox((Start))
+%!preproc(tex): @LSH@ @@Ovalbox((Left Shoulder))
+%!preproc(tex): @RSH@ @@Ovalbox((Right Shoulder))
+
+%!postproc: @B@ B
+%!postproc: @A@ A
+%!postproc: @SELECT@ Select
+%!postproc: @START@ Start
+%!postproc: @LSH@ Left Shoulder
+%!postproc: @RSH@ Right Shoulder
+
+%!postproc: @UP@ ↑
+%!postproc: @DOWN@ ↓
+%!postproc: @LEFT@ ←
+%!postproc: @RIGHT@ →
+
+%!postproc: @MACHINE@ PSP
