@@ -16,6 +16,8 @@ yoyz
 
 %!style(xhtml): picoloop_manual.css
 
+%!preproc(md): '\{....\}' ''
+%!postproc(md): 'LINEBREAK' ''
 
 %!includeconf: /usr/share/textallion//core/textallion.t2t
 

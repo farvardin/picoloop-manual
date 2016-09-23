@@ -71,6 +71,9 @@ all:    epub html pdf website clean
 #	-cp * $(DOCUMENT)
 #	zip $(DOCUMENT).zip -r $(DOCUMENT) -x $(DOCUMENT).zip
 
+md:
+	$(TXT2TAGS) -t md --toc --outfile README.md $(DOCUMENT).t2t
+
 html:
 	$(TXT2TAGS) -T $(TEXTALLIONFOLDER)/templates/xhtml.html -t xhtml --css-inside --css-sugar --toc --outfile $(DOCUMENT).html $(DOCUMENT).t2t
 
