@@ -1,5 +1,7 @@
 
 
+make md
+
 cp includes/commands_pc.t2t includes/default.t2t
 make pdfsmall
 make booklet

@@ -1,6 +1,3 @@
-Picoloop Manual
-yoyz
-2016-09-16
 
 
 ## Picoloop Tutorial (PC version) 
@@ -10,16 +7,6 @@ Welcome to **Picoloop**!
 **Picoloop** is a synth and a step sequencer. In this tutorial, we'll make a tour of the basic functionalities of **Picoloop**. The commands described here are adapted for the usage on PC.
 
  ![](images/picoloop.png)
-
-
- * Picoloop Tutorial (PC version)
-  * Starting
-  * Entering notes
-  * Saving and loading music
-  * Exploring new horizons
- * Picoloop Memo (PC version)
-  * L/S menu
- * Other commands
 
 ### Starting 
 
