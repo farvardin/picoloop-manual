@@ -72,6 +72,7 @@ all:    epub html pdf website clean
 #	zip $(DOCUMENT).zip -r $(DOCUMENT) -x $(DOCUMENT).zip
 
 md:
+	cp includes/commands_pc.t2t includes/default.t2t
 	$(TXT2TAGS) -t md --no-toc --outfile README.md $(DOCUMENT).t2t
 
 html:

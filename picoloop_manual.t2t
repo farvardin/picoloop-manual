@@ -23,6 +23,7 @@
 %!postproc(md): 'SIMPLELINE' '------'
 
 
+
 %!includeconf: /usr/share/textallion//core/textallion.t2t
 
 %!postproc(tex): 'TEXTALLIONPATH' '/usr/share/textallion/'
@@ -94,7 +95,7 @@ You can change the value of this note by holding @B@ and typing on the arrows. @
 
  {->--}[images/picoloop03.png][140]{-<--}
  
-There are 4 tracks which can play together. To change the current working track, go back to the menu with the @@SELECT@@ key. Use the @UP@ and @DOWN@ arrows to select the track. It will display Track/0, Track/1 etc. Now you can enter more notes in this other track.
+There are 4 tracks which can play together. To change the current working track, go back to the menu with the @SELECT@ key. Use the @UP@ and @DOWN@ arrows to select the track. It will display Track/0, Track/1 etc. Now you can enter more notes in this other track.
  
 To change the sound of the current notes, select ENV in the menu, and validate with @B@, the menu will disappear, meaning you can enter notes or change values. In the ENV parameters, you can alter the sound with @B@ + arrows. Try to play with the two parameters. You end up with something like that:
  
@@ -185,10 +186,14 @@ On some less powerful machines, the high ressources engines are not enabled.
 | @A@ + @DOWN@ | Save your current pattern (group of 4 tracks) |
 | @B@ + @UP@   | Load a track (replace current) |
 | @A@ + @UP@    | Load a 4 tracks pattern |
+
+
 || Song position |  |
 | @A@ + @UP@   | Define Loop start position |
 | @A@ + @DOWN@ | Define Loop end position |
 | @B@ + @UP@/@DOWN@ | Change the values |
+| @B@ + @LEFT@/@RIGHT@ | copy value left or right |
+| @A@ + @LEFT@/@RIGHT@ | insert or delete value |
 
 
 || PSH menu   |   |

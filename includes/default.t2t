@@ -8,6 +8,15 @@
 %!preproc(tex): @LSH@ @@Ovalbox((TAB))
 %!preproc(tex): @RSH@ @@Ovalbox((Backspace))
 
+
+%!postproc(md): @B@ <kbd>Alt</kbd>
+%!postproc(md): @A@ <kbd>Ctrl</kbd>
+%!postproc(md): @SELECT@ <kbd>ESC</kbd>
+%!postproc(md): @START@ <kbd>Enter</kbd>
+%!postproc(md): @LSH@ <kbd>TAB</kbd>
+%!postproc(md): @RSH@ <kbd>Backspace</kbd>
+
+
 %!postproc: @B@ Alt
 %!postproc: @A@ Ctrl
 %!postproc: @SELECT@ ESC
@@ -21,10 +30,16 @@
 %-!postproc: @LEFT@ ⇦
 %-!postproc: @RIGHT@ ⇨
 
+
 %!postproc: @UP@ ↑
 %!postproc: @DOWN@ ↓
 %!postproc: @LEFT@ ←
 %!postproc: @RIGHT@ →
+
+%!postproc(md): @UP@ <kbd>↑</kbd>
+%!postproc(md): @DOWN@ <kbd>↓</kbd>
+%!postproc(md): @LEFT@ <kbd>←</kbd>
+%!postproc(md): @RIGHT@ <kbd>→</kbd>
 
 %!postproc: @MACHINE@ PC
 

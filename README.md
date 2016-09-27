@@ -18,7 +18,7 @@ Then make sure the AudioInput matches your soundcard. Eventually make it select 
 
  ![](images/picoloop01.png)
 
-To exit this panel and start making music, validate with Ctrl.  In the case it crashes, it might be because the soundcard configuration was not correct. Restart the binary and select another card setting.
+To exit this panel and start making music, validate with <kbd>Ctrl</kbd>.  In the case it crashes, it might be because the soundcard configuration was not correct. Restart the binary and select another card setting.
 
 You will be presented to the **Picoloop** main window. 
 
@@ -32,43 +32,43 @@ Move left or right to select the parameter you want to use.
 
 ### Entering notes 
 
-At the moment, select Note with the Alt key. Now you are in *Edit mode*, and you can navigate within the 16 steps with the ←, →, ↑ and ↓ arrows. Insert your first note with the Ctrl key. It will be a C2. 
+At the moment, select Note with the <kbd>Alt</kbd> key. Now you are in *Edit mode*, and you can navigate within the 16 steps with the ←, →, ↑ and ↓ arrows. Insert your first note with the <kbd>Ctrl</kbd> key. It will be a C2. 
 
-You can change the value of this note by holding Alt and typing on the arrows. ← or → for decreasing or increasing 1/2 tone, ↑ or ↓ for increasing or decreasing 1 octave. Make it for example G2. Now select other empty cases and type Ctrl for adding more notes and Alt for changing their values. Delete an existing note with Ctrl. The next note entered with Ctrl will be the previous value which was deleted (delete an A3, next one with be A3 then).
+You can change the value of this note by holding <kbd>Alt</kbd> and typing on the arrows. ← or → for decreasing or increasing 1/2 tone, ↑ or ↓ for increasing or decreasing 1 octave. Make it for example G2. Now select other empty cases and type <kbd>Ctrl</kbd> for adding more notes and <kbd>Alt</kbd> for changing their values. Delete an existing note with <kbd>Ctrl</kbd>. The next note entered with <kbd>Ctrl</kbd> will be the previous value which was deleted (delete an A3, next one with be A3 then).
 
  ![](images/picoloop03.png)
 
-There are 4 tracks which can play together. To change the current working track, go back to the menu with the @ESC@ key. Use the ↑ and ↓ arrows to select the track. It will display Track/0, Track/1 etc. Now you can enter more notes in this other track.
+There are 4 tracks which can play together. To change the current working track, go back to the menu with the <kbd>ESC</kbd> key. Use the ↑ and ↓ arrows to select the track. It will display Track/0, Track/1 etc. Now you can enter more notes in this other track.
 
-To change the sound of the current notes, select ENV in the menu, and validate with Alt, the menu will disappear, meaning you can enter notes or change values. In the ENV parameters, you can alter the sound with Alt + arrows. Try to play with the two parameters. You end up with something like that:
+To change the sound of the current notes, select ENV in the menu, and validate with <kbd>Alt</kbd>, the menu will disappear, meaning you can enter notes or change values. In the ENV parameters, you can alter the sound with <kbd>Alt</kbd> + arrows. Try to play with the two parameters. You end up with something like that:
 
   ![](images/picoloop04.png)
 
-Now if you type the Enter key, you'll access more parameters, which you can change in a similar way. In this mode, you alter parameters for individual notes, if you want to change all the inserted notes for the current track, exit the *edit mode* with the ESC key, and use Ctrl + arrows to change all the steps together.
+Now if you type the <kbd>Enter</kbd> key, you'll access more parameters, which you can change in a similar way. In this mode, you alter parameters for individual notes, if you want to change all the inserted notes for the current track, exit the *edit mode* with the <kbd>ESC</kbd> key, and use <kbd>Ctrl</kbd> + arrows to change all the steps together.
 
 ### Saving and loading music 
 
 Now it's time to save your work!
 
-Exit the *edit mode* with ESC if you're still in it, and type again ESC to enter the second menu (*Menu2*). 
+Exit the *edit mode* with <kbd>ESC</kbd> if you're still in it, and type again <kbd>ESC</kbd> to enter the second menu (*Menu2*). 
 
 It will display:
 
     L/S  [ BANK ]  PSH  MAC  FX  BPM
 
-Select L/S (*Load/Save*) and enter the menu with Alt.
+Select L/S (*Load/Save*) and enter the menu with <kbd>Alt</kbd>.
 
 It will look like this:
 
   ![](images/picoloop05.png)
 
-The menu on top represents your tracks. The cursor on this screenshot is on the top 0E column. To save an individual track, select an empty slot and type Alt + ↓. Now the slot will be lighter (with this grey theme). To save all the 4 tracks (one pattern), type Ctrl + ↓, the whole column will be lighter.
+The menu on top represents your tracks. The cursor on this screenshot is on the top 0E column. To save an individual track, select an empty slot and type <kbd>Alt</kbd> + ↓. Now the slot will be lighter (with this grey theme). To save all the 4 tracks (one pattern), type <kbd>Ctrl</kbd> + ↓, the whole column will be lighter.
 
-To reload you tracks later, select a column and type Ctrl + ↑. To load an individual slot, type Alt + ↑. Beware, there is no warning so it might erase your current work.
+To reload you tracks later, select a column and type <kbd>Ctrl</kbd> + ↑. To load an individual slot, type <kbd>Alt</kbd> + ↑. Beware, there is no warning so it might erase your current work.
 
-Now you can assemble your tracks with the order list (under the Song Position label). Go into this list with the Enter key. 
+Now you can assemble your tracks with the order list (under the Song Position label). Go into this list with the <kbd>Enter</kbd> key. 
 
-You can define Loop start position with Ctrl + ↑. As soon as you define this, the song with start to play. And you can define Loop end position with Ctrl + ↓. Change the values of the list with Alt + ↑/↓ 
+You can define Loop start position with <kbd>Ctrl</kbd> + ↑. As soon as you define this, the song with start to play. And you can define Loop end position with <kbd>Ctrl</kbd> + ↓. Change the values of the list with <kbd>Alt</kbd> + ↑/↓ 
 
 ### Exploring new horizons 
 
@@ -96,53 +96,56 @@ On some less powerful machines, the high ressources engines are not enabled.
 |-----|----------|
 |← / → |move backward/forward in the menu|
 |↑ / ↓ |select the track from 0 to track 3|
-|Alt |do nothing|
-|Ctrl + ←/→/↑/↓ |edit all step at once|
-|Ctrl |enter the edit mode|
-|TAB |go to the next     16 step on the same track|
-|Backspace |go to the previous 16 step on the same track|
-|ESC |call menu2 or menu1|
+|<kbd>Alt</kbd> |do nothing|
+|<kbd>Ctrl</kbd> + ←/→/↑/↓ |edit all step at once|
+|<kbd>Ctrl</kbd> |enter the edit mode|
+|<kbd>TAB</kbd> |go to the next     16 step on the same track|
+|<kbd>Backspace</kbd> |go to the previous 16 step on the same track|
+|<kbd>ESC</kbd> |call menu2 or menu1|
 
 | Edit mode ||
 |-----|----------|
 |← / → |select next step|
 |↑ / ↓ |select step+4, step-4|
-|Alt |enter a note in a step, it works as a cut/paste|
-|Ctrl + ←/→/↑/↓ |edit the current step|
-|Ctrl |do nothing|
-|TAB |go to the next     16 step on the same track|
-|Backspace |go to the previous 16 step on the same track|
-|ESC |call menu2 or menu1|
-|Enter |cycle between the different parameters|
+|<kbd>Alt</kbd> |enter a note in a step, it works as a cut/paste|
+|<kbd>Ctrl</kbd> + ←/→/↑/↓ |edit the current step|
+|<kbd>Ctrl</kbd> |do nothing|
+|<kbd>TAB</kbd> |go to the next     16 step on the same track|
+|<kbd>Backspace</kbd> |go to the previous 16 step on the same track|
+|<kbd>ESC</kbd> |call menu2 or menu1|
+|<kbd>Enter</kbd> |cycle between the different parameters|
 
 #### L/S menu 
 
 | Bank ||
 |-----|----------|
-|Alt + ↓ |Save the current track on the selected slot|
-|Ctrl + ↓ |Save your current pattern (group of 4 tracks)|
-|Alt + ↑ |Load a track (replace current)|
-|Ctrl + ↑ |Load a 4 tracks pattern|
+|<kbd>Alt</kbd> + ↓ |Save the current track on the selected slot|
+|<kbd>Ctrl</kbd> + ↓ |Save your current pattern (group of 4 tracks)|
+|<kbd>Alt</kbd> + ↑ |Load a track (replace current)|
+|<kbd>Ctrl</kbd> + ↑ |Load a 4 tracks pattern|
+
 | Song position ||
 |-----|----------|
-|Ctrl + ↑ |Define Loop start position|
-|Ctrl + ↓ |Define Loop end position|
-|Alt + ↑/↓ |Change the values|
+|<kbd>Ctrl</kbd> + ↑ |Define Loop start position|
+|<kbd>Ctrl</kbd> + ↓ |Define Loop end position|
+|<kbd>Alt</kbd> + ↑/↓ |Change the values|
+|<kbd>Alt</kbd> + ←/→ |copy value left or right|
+|<kbd>Ctrl</kbd> + ←/→ |insert or delete value|
 
 | PSH menu ||
 |-----|----------|
-|Ctrl+↑ |Increase the track size (16 steps block)|
-|Ctrl+↓ |Decrease the track size (16 steps block)|
-|Ctrl+→ |Increase the track size (1 step)|
-|Ctrl+← |Decrease the track size (1 step)|
-|TAB and Backspace |Navigate into the new steps (-16 or +16)|
+|<kbd>Ctrl</kbd>+↑ |Increase the track size (16 steps block)|
+|<kbd>Ctrl</kbd>+↓ |Decrease the track size (16 steps block)|
+|<kbd>Ctrl</kbd>+→ |Increase the track size (1 step)|
+|<kbd>Ctrl</kbd>+← |Decrease the track size (1 step)|
+|<kbd>TAB</kbd> and <kbd>Backspace</kbd> |Navigate into the new steps (-16 or +16)|
 
 ### Other commands 
 
 | Volume ||
 |-----|----------|
-|ESC+↑ |Increase volume|
-|ESC+↓ |Decrease volume|
+|<kbd>ESC</kbd>+↑ |Increase volume|
+|<kbd>ESC</kbd>+↓ |Decrease volume|
 
 Get picoloop at https://github.com/yoyz/audio/
 
