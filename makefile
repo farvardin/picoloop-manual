@@ -95,6 +95,8 @@ endif
 	-pdflatex -interaction batchmode $(DOCUMENT).tex
 	# (the compilation of the latex document is duplicated so the TOC generated the first time will be included the second time)
 	-pdflatex -interaction batchmode $(DOCUMENT).tex
+	-pdfjoin --paper a4paper --rotateoversize false includes/picoloop_manual_cover.pdf includes/picoloop_manual_blank_page.pdf $(DOCUMENT).pdf includes/picoloop_manual_blank_page.pdf includes/picoloop_manual_blank_page.pdf --outfile $(DOCUMENT)-joined.pdf
+	-mv $(DOCUMENT)-joined.pdf $(DOCUMENT).pdf
 	# and one again because of makeindex
 	
 

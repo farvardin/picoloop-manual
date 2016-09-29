@@ -6,7 +6,7 @@ Welcome to **Picoloop**!
 
 **Picoloop** is a synth and a step sequencer. In this tutorial, we'll make a tour of the basic functionalities of **Picoloop**. The commands described here are adapted for the usage on PSP.
 
- ![](images/picoloop.png)
+ ![](images/picoloop_logo_small.png)
 
 ### Starting 
 
@@ -90,7 +90,7 @@ On some less powerful machines, the high ressources engines are not enabled.
 
 ## Picoloop Memo (PSP version) 
 
- ![](images/picoloop.png)
+ ![](images/picoloop_logo_small.png)
 
 | Menu mode ||
 |-----|----------|

@@ -33,6 +33,7 @@
 %!preproc: '== \*\*Picoloop\*\*' '== Picoloop'
 
 %!postproc(tex): 'usepackage\[english,frenchb,francais\]\{babel\}' 'usepackage[english]{babel}'
+%!postproc(md): 'picoloop.png' 'picoloop_logo_small.png'
 
 
 %!includeconf:includes/default.t2t
