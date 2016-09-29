@@ -6,7 +6,7 @@ Welcome to **Picoloop**!
 
 **Picoloop** is a synth and a step sequencer. 
 
- ![](images/picoloop.png)
+ ![](images/picoloop.png){:height="40px}
 
 
 - Get **Picoloop** at https://github.com/yoyz/audio/
