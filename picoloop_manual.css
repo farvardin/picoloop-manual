@@ -8,11 +8,11 @@
     /* optionnal */
     /* see http://code.google.com/webfonts */
     /* example with http://www.google.com/webfonts/family?family=Goudy+Bookletter+1911&subset=latin#code 
-     * Just add "CustomFont" (and rename it if you prefer), before serif in the body {}, or remove it if you don't want this */
-    font-family: "CustomFont";
+     * Just add "Sans" (and rename it if you prefer), before serif in the body {}, or remove it if you don't want this */
+    font-family: "Sans";
     font-style: normal;
     font-weight: normal;
-    src: url("http://themes.googleusercontent.com/font?kit=l5lwlGTN3pEY5Bf-rQEuILmKcuvUA98TddnVPjOJl_w");	
+    /*src: url("http://themes.googleusercontent.com/font?kit=l5lwlGTN3pEY5Bf-rQEuILmKcuvUA98TddnVPjOJl_w");	*/
 }
 
 
@@ -20,7 +20,7 @@ body {
     margin:2em;
     padding:1.2em;
     /*font-size:1.2em;*/
-    font:1.5em CustomFont, serif;
+    font:1.5em Sans, serif;
     line-height:1.625em;
     background-color:#FFFEF0;
     font-size-adjust:0.4;

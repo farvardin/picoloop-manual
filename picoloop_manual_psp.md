@@ -4,7 +4,7 @@
 
 Welcome to **Picoloop**!
 
-**Picoloop** is a synth and a step sequencer. In this tutorial, we'll make a tour of the basic functionalities of **Picoloop**. The commands described here are adapted for the usage on PSP.
+**Picoloop** is a synth and a step sequencer made by Yoyz. In this tutorial, we'll make a tour of the basic functionalities of **Picoloop**. The commands described here are adapted for the usage on PSP.
 
  ![](images/picoloop_logo_small.png)
 

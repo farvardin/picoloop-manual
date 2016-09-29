@@ -32,7 +32,7 @@ else
 endif
 
 DOCUMENT_TITLE = Picoloop Manual
-DOCUMENT_AUTHOR = yoyz
+DOCUMENT_AUTHOR = Garvalf
 DOCUMENT_TAGS = music, audio, picoloop
 DOCUMENT_INFO = textallion - https://bitbucket.org/farvardin/textallion
 
@@ -174,17 +174,17 @@ tidy:
 
 	
 epub:
-	$(TXT2TAGS) -T $(TEXTALLIONFOLDER)/templates/epub.html -t xhtml --no-style --no-toc --outfile $(DOCUMENT).html $(DOCUMENT).t2t
+	$(TXT2TAGS) -T epub.html -t xhtml --no-style --no-toc --outfile $(DOCUMENT).html $(DOCUMENT).t2t
 	cat $(DOCUMENT).html | sed -e "s/<audio\(.*\)audio>//g" > $(DOCUMENT)2.html
 	mv $(DOCUMENT)2.html $(DOCUMENT).html
 	-make tidy
 	cat $(DOCUMENT).html | sed -e "s/&#10086;/*/g" | sed -e "s/&#10087;/*/g" | sed -e "s/&#10037;/*/g" | sed -e "s/&#9788;/*/g" | sed -e "s/&#9789;/*/g" | sed -e "s/&#9790;/*/g" | sed -e "s/&#9675;/*/g" | sed -e "s/html\#ftn/html/g" > $(DOCUMENT)2.html
 	mv $(DOCUMENT)2.html $(DOCUMENT).html
 	#
-	ebook-convert $(DOCUMENT).html $(DOCUMENT).epub --max-levels 0 --pretty-print --level1-toc //h:h1 --level2-toc //h:h2 --level3-toc //h:h3 --max-toc-links 0 --toc-threshold 3  --chapter-mark pagebreak  --cover $(DOCUMENT_COVER) --extra-css $(TEXTALLIONFOLDER)/includes/epub.css --no-default-epub-cover  --preserve-cover-aspect-ratio --no-chapters-in-toc --disable-font-rescaling
+	ebook-convert $(DOCUMENT).html $(DOCUMENT).epub --max-levels 0 --pretty-print --level1-toc //h:h1 --level2-toc //h:h2 --level3-toc //h:h3 --max-toc-links 0 --toc-threshold 3  --chapter-mark pagebreak  --cover images/$(DOCUMENT_COVER) --extra-css $(TEXTALLIONFOLDER)/includes/epub.css --no-default-epub-cover  --preserve-cover-aspect-ratio --no-chapters-in-toc --disable-font-rescaling
 	# --filter-css font-family
 	#
-	ebook-meta  $(DOCUMENT).epub --title "$(DOCUMENT_TITLE)" --authors "$(DOCUMENT_AUTHOR)" --tags "$(DOCUMENT_TAGS)" --language $(DOCUMENT_LANGUAGE) --book-producer 'textallion - https://bitbucket.org/farvardin/textallion' --comments "$(DOCUMENT_INFO)" --cover $(DOCUMENT_COVER) 
+	ebook-meta  $(DOCUMENT).epub --title "$(DOCUMENT_TITLE)" --authors "$(DOCUMENT_AUTHOR)" --tags "$(DOCUMENT_TAGS)" --language $(DOCUMENT_LANGUAGE) --book-producer 'textallion - https://bitbucket.org/farvardin/textallion' --comments "$(DOCUMENT_INFO)" --cover images/$(DOCUMENT_COVER) 
 
 # split (not working well...)
 
