@@ -24,15 +24,27 @@ Welcome to **Picoloop**!
 
 Print the tutorial
 
-- [PC version](picoloop_manual_pc.pdf)
-- [PSP version](picoloop_manual_psp.pdf)
-- [PocketChip version](picoloop_manual_pocketchip.pdf)
+- [PC version](https://github.com/farvardin/picoloop-manual/files/500912/picoloop_manual_pc.pdf)
+- [PSP version](https://github.com/farvardin/picoloop-manual/files/500914/picoloop_manual_psp.pdf)
+- [PocketChip version](https://github.com/farvardin/picoloop-manual/files/500910/picoloop_manual_booklet_pocketchip.pdf)
+
+
+Alternatively, this _booklet_ version will fold nicely to make a little book (only usable if you print it):
+
+- [picoloop_manual_booklet_pc.pdf](https://github.com/farvardin/picoloop-manual/files/500913/picoloop_manual_booklet_pc.pdf)
+- [picoloop_manual_booklet_psp.pdf](https://github.com/farvardin/picoloop-manual/files/500911/picoloop_manual_booklet_psp.pdf)
+- [picoloop_manual_pocketchip.pdf](https://github.com/farvardin/picoloop-manual/files/500909/picoloop_manual_pocketchip.pdf)
 
 
 ### Epub version:
 
 Read the tutorial on your ebook-reader
 
-- [PC version](picoloop_manual_pc.epub)
-- [PSP version](picoloop_manual_psp.epub)
-- [PocketChip version](picoloop_manual_pocketchip.epub)
+- [PC version](http://www.epubbud.com/book.php?g=4KUMDG9A)
+- [PSP version](http://www.epubbud.com/book.php?g=47DP6XLP)
+- [PocketChip version](http://www.epubbud.com/book.php?g=S7ZU7CBJ)
+
+
+
+
+
