@@ -188,12 +188,12 @@ On some less powerful machines, the high ressources engines are not enabled.
 | @A@ + @UP@    | Load a 4 tracks pattern |
 
 
-|| Song position |  |
+|| Song position (order list) |  |
 | @A@ + @UP@   | Define Loop start position |
 | @A@ + @DOWN@ | Define Loop end position |
 | @B@ + @UP@/@DOWN@ | Change the values |
 | @B@ + @LEFT@/@RIGHT@ | copy value left or right |
-| @A@ + @LEFT@/@RIGHT@ | insert or delete value |
+| @A@ + @LEFT@/@RIGHT@ | insert or delete value (shift patterns) |
 
 
 || PSH menu   |   |
