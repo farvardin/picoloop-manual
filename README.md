@@ -22,8 +22,17 @@ Welcome to **Picoloop**!
 
 ### PDF version:
 
-- [PC version](picoloop_manual_pc.md)
-- [PSP version](picoloop_manual_psp.md)
-- [PocketChip version](picoloop_manual_pocketchip.md)
+Print the tutorial
+
+- [PC version](picoloop_manual_pc.pdf)
+- [PSP version](picoloop_manual_psp.pdf)
+- [PocketChip version](picoloop_manual_pocketchip.pdf)
+
 
 ### Epub version:
+
+Read the tutorial on your ebook-reader
+
+- [PC version](picoloop_manual_pc.epub)
+- [PSP version](picoloop_manual_psp.epub)
+- [PocketChip version](picoloop_manual_pocketchip.epub)
