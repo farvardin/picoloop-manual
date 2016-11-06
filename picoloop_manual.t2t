@@ -66,6 +66,15 @@ Picoloop is a synth and a step sequencer made by Yoyz. In this tutorial, we'll m
 
 First, get Picoloop at https://github.com/yoyz/audio/
 
+Compile it yourself, if needed (instructions are provided in the readme). You can also tweak some parameters, found in the Master.h file, before the compilation, such as the MAX_PATTERN_BY_PROJECT variable.
+
+The requirements for starting the application are:
+- The picoloop binary itself (called "picoloop" or "PatternPlayer_#####" after you've just compiled it, you can rename it if needed)_
+- the font.ttf file
+- optionnally the patch/MDADrum/ folder if you want to get some electronic drums
+- the bank/ folder to store your creations.
+
+
 Run the Picoloop binary. You will be presented to a setting panel. Navigate with @LEFT@, @RIGHT@, @UP@ and @DOWN@ and choose the color theme (palette) you prefer.
 
 Then make sure the AudioInput matches your soundcard. Eventually make it select "default".
@@ -131,14 +140,22 @@ Now you can assemble your tracks with the order list (under the Song Position la
 
 You can define Loop start position with @A@ + @UP@. As soon as you define this, the song with start to play. And you can define Loop end position with @A@ + @DOWN@. Change the values of the list with @B@ + @UP@/@DOWN@ 
 
+Each bank is for storing a different project.
+
+There is no option for backing up a bank you're working on, so it can be a good idea to backup your whole bank/ folder from time to time. On Linux / Unix systems, you can use a script like this from the command line:
+
+``` zip -r bank_picoloop_`date +%Y-%m-%d_%H:%M`.zip bank
+
+
 
 === Exploring new horizons ===
 
-As we've seen earlier, we can change the pitch value (note) of a step, but also some parameters such as A/R (enveloppe), OSC (oscillator), VCO (a kind of mixer), LFO and FLTR (filter).
+As we've seen earlier, we can change the pitch value (note) of a step, but also some parameters such as ENV (enveloppe), OSC (oscillator), VCO (a kind of mixer), LFO and FLTR (filter). If you press @START@ while in a parameter menu, you can also get more parameters related to the first one (for example in the ENV menu, you'll get first Attack/Release, and after pressing @START@ you'll get Decay/Sustain, one more press on @START@ and it's Trig/Amplification). 
 
 But we can also change the whole engine, using the "MAC" menu in //menu2//. The different engines are (from up to down):
 - Psynth (default) : PicoSynth, soustractive synth with 2 oscillators (lightweight).
-- Mdrum : MDA Drumsynth
+- SID : emulation of the MOS SID 6581/8580 soundchip (found on Commodore C64 8-bit computers), based on the resid engine
+- Mdrum : MDA Drumsynth (you need the patches in the picoloop/patch/MDADrum/ folder)
 - Mdiout : midi out
 - Tsynth : Twytch/Helm. Needs high ressources.
 - 0303 : based on Open303, a free, open source emulation of the Roland TB-303 synthesizer. Needs high ressources.
@@ -148,6 +165,9 @@ But we can also change the whole engine, using the "MAC" menu in //menu2//. The 
 - OPL2 : FM synthesis
 
 On some less powerful machines, the high ressources engines are not enabled.
+
+
+Refer to the picoloop README for all the parameters or experiment yourself.
 
 
 
