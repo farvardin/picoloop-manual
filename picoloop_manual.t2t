@@ -69,7 +69,7 @@ First, get Picoloop at https://github.com/yoyz/audio/
 Compile it yourself, if needed (instructions are provided in the readme). You can also tweak some parameters, found in the Master.h file, before the compilation, such as the MAX_PATTERN_BY_PROJECT variable.
 
 The requirements for starting the application are:
-- The picoloop binary itself (called "picoloop" or "PatternPlayer_#####" after you've just compiled it, you can rename it if needed)_
+- The picoloop binary itself (called "picoloop" or "PatternPlayer_#####" after you've just compiled it, you can rename it if needed)
 - the font.ttf file
 - optionnally the patch/MDADrum/ folder if you want to get some electronic drums
 - the bank/ folder to store your creations.
@@ -150,7 +150,8 @@ There is no option for backing up a bank you're working on, so it can be a good 
 
 === Exploring new horizons ===
 
-As we've seen earlier, we can change the pitch value (note) of a step, but also some parameters such as ENV (enveloppe), OSC (oscillator), VCO (a kind of mixer), LFO and FLTR (filter). If you press @START@ while in a parameter menu, you can also get more parameters related to the first one (for example in the ENV menu, you'll get first Attack/Release, and after pressing @START@ you'll get Decay/Sustain, one more press on @START@ and it's Trig/Amplification). 
+As we've seen earlier, we can change the pitch value (note) of a step, but also some parameters such as ENV (enveloppe), OSC (oscillator), VCO (a kind of mixer), LFO and FLTR (filter). If you press @START@ while in a parameter menu, you can also get more parameters related to the first one (for example in the ENV menu, you'll get first Attack/Release, and after pressing @START@ you'll get Decay/Sustain, one more press on @START@ and it's Trig/Amplification). Note: on some engines, ENV is replaced by A/R.
+
 
 But we can also change the whole engine, using the "MAC" menu in //menu2//. The different engines are (from up to down):
 - Psynth (default) : PicoSynth, soustractive synth with 2 oscillators (lightweight).
