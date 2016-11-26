@@ -147,6 +147,13 @@ There is no option for backing up a bank you're working on, so it can be a good 
 ``` zip -r bank_picoloop_`date +%Y-%m-%d_%H:%M`.zip bank
 
 
+To record your music, you can either (obviously) plug a recorder to the line-out of your computer or device, but you can also set this environment setting before starting picoloop:
+
+``` export DUMP_AUDIO=1 && picoloop
+
+
+
+
 
 === Exploring new horizons ===
 
