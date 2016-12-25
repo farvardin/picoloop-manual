@@ -66,7 +66,7 @@ Picoloop is a synth and a step sequencer made by Yoyz. In this tutorial, we'll m
 
 First, get Picoloop at https://github.com/yoyz/audio/
 
-Compile it yourself, if needed (instructions are provided in the readme). You can also tweak some parameters, found in the Master.h file, before the compilation, such as the MAX_PATTERN_BY_PROJECT variable.
+Compile it yourself, if needed (instructions are provided in the readme). You can also tweak some parameters, found in the Master.h file, before the compilation, such as the MAX_PATTERN_BY_PROJECT variable to increase the pattern slots. The Windows and PSP binaries can be found in the [Releases https://github.com/yoyz/audio/releases] tab.
 
 The requirements for starting the application are:
 - The picoloop binary itself (called "picoloop" or "PatternPlayer_#####" after you've just compiled it, you can rename it if needed)
@@ -77,7 +77,7 @@ The requirements for starting the application are:
 
 Run the Picoloop binary. You will be presented to a setting panel. Navigate with @LEFT@, @RIGHT@, @UP@ and @DOWN@ and choose the color theme (palette) you prefer.
 
-Then make sure the AudioInput matches your soundcard. Eventually make it select "default".
+Then make sure the AudioOutput matches your soundcard. Eventually make it select and display "default".
 
  {->--}[images/picoloop01.png][140]{-<--}
 
@@ -116,7 +116,7 @@ Now if you type the @START@ key, you'll access more parameters, which you can ch
 
 === Saving and loading music ===
 
-Now it's time to save your work!
+Now it's time to save your first work!
 
 Exit the //edit mode// with @SELECT@ if you're still in it, and type again @SELECT@ to enter the second menu (//Menu2//). 
 
@@ -131,6 +131,8 @@ Select L/S (//Load/Save//) and enter the menu with @B@.
 It will look like this:
 
   {->--}[images/picoloop05.png][140]{-<--}
+  
+This screen is for saving individual patterns, but also to organise them into a whole song.
 
 The menu on top represents your tracks. The cursor on this screenshot is on the top 0E column. To save an individual track, select an empty slot and type @B@ + @DOWN@. Now the slot will be lighter (with this grey theme). To save all the 4 tracks (one pattern), type @A@ + @DOWN@, the whole column will be lighter.
 
@@ -140,7 +142,12 @@ Now you can assemble your tracks with the order list (under the Song Position la
 
 You can define Loop start position with @A@ + @UP@. As soon as you define this, the song with start to play. And you can define Loop end position with @A@ + @DOWN@. Change the values of the list with @B@ + @UP@/@DOWN@ 
 
-Each bank is for storing a different project.
+__Important__: 
++ When you're in the order list, your changes are saved only when you exit it to the pattern editor with @SELECT@. If you close Picoloop before doing this, your changes won't be saved!
++ When you're in the pattern editor, the data are written in a buffer, and you must save the current pattern in the track grid before playing your song from the order list (otherwise the changes in the pattern won't be saved). 
+You can only save the pattern in the same row as the pattern number you've worked in. For example a pattern in the Track/1 can only be saved in the second row in the track grid (tracks are starting from 0, Track/0 is the first one, Track/1 is the second one)
+
+Each bank is for storing a different project (=song).
 
 There is no option for backing up a bank you're working on, so it can be a good idea to backup your whole bank/ folder from time to time. On Linux / Unix systems, you can use a script like this from the command line:
 
