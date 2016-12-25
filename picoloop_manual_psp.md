@@ -12,18 +12,18 @@ Welcome to **Picoloop**!
 
 First, get **Picoloop** at https://github.com/yoyz/audio/
 
-Compile it yourself, if needed (instructions are provided in the readme). You can also tweak some parameters, found in the Master.h file, before the compilation, such as the MAX_PATTERN_BY_PROJECT variable.
+Compile it yourself, if needed (instructions are provided in the readme). You can also tweak some parameters, found in the Master.h file, before the compilation, such as the MAX_PATTERN_BY_PROJECT variable to increase the pattern slots. The Windows and PSP binaries can be found in the [Releases](https://github.com/yoyz/audio/releases) tab.
 
 The requirements for starting the application are:
 
- * The picoloop binary itself (called "picoloop" or "PatternPlayer_#####" after you've just compiled it, you can rename it if needed)_
+ * The picoloop binary itself (called "picoloop" or "PatternPlayer_#####" after you've just compiled it, you can rename it if needed)
  * the font.ttf file
  * optionnally the patch/MDADrum/ folder if you want to get some electronic drums
  * the bank/ folder to store your creations.
 
 Run the **Picoloop** binary. You will be presented to a setting panel. Navigate with ←, →, ↑ and ↓ and choose the color theme (palette) you prefer.
 
-Then make sure the AudioInput matches your soundcard. Eventually make it select "default".
+Then make sure the AudioOutput matches your soundcard. Eventually make it select and display "default".
 
  ![](images/picoloop01.png)
 
@@ -57,7 +57,7 @@ Now if you type the Start key, you'll access more parameters, which you can chan
 
 ### Saving and loading music 
 
-Now it's time to save your work!
+Now it's time to save your first work!
 
 Exit the *edit mode* with Select if you're still in it, and type again Select to enter the second menu (*Menu2*). 
 
@@ -71,6 +71,8 @@ It will look like this:
 
   ![](images/picoloop05.png)
 
+This screen is for saving individual patterns, but also to organise them into a whole song.
+
 The menu on top represents your tracks. The cursor on this screenshot is on the top 0E column. To save an individual track, select an empty slot and type B + ↓. Now the slot will be lighter (with this grey theme). To save all the 4 tracks (one pattern), type A + ↓, the whole column will be lighter.
 
 To reload you tracks later, select a column and type A + ↑. To load an individual slot, type B + ↑. Beware, there is no warning so it might erase your current work.
@@ -79,15 +81,25 @@ Now you can assemble your tracks with the order list (under the Song Position la
 
 You can define Loop start position with A + ↑. As soon as you define this, the song with start to play. And you can define Loop end position with A + ↓. Change the values of the list with B + ↑/↓ 
 
-Each bank is for storing a different project.
+Important: 
+
+1. When you're in the order list, your changes are saved only when you exit it to the pattern editor with Select. If you close **Picoloop** before doing this, your changes won't be saved!
+1. When you're in the pattern editor, the data are written in a buffer, and you must save the current pattern in the track grid before playing your song from the order list (otherwise the changes in the pattern won't be saved). 
+You can only save the pattern in the same row as the pattern number you've worked in. For example a pattern in the Track/1 can only be saved in the second row in the track grid (tracks are starting from 0, Track/0 is the first one, Track/1 is the second one)
+
+Each bank is for storing a different project (=song).
 
 There is no option for backing up a bank you're working on, so it can be a good idea to backup your whole bank/ folder from time to time. On Linux / Unix systems, you can use a script like this from the command line:
 
     zip -r bank_picoloop_`date +%Y-%m-%d_%H:%M`.zip bank
 
+To record your music, you can either (obviously) plug a recorder to the line-out of your computer or device, but you can also set this environment setting before starting picoloop:
+
+    export DUMP_AUDIO=1 && picoloop
+
 ### Exploring new horizons 
 
-As we've seen earlier, we can change the pitch value (note) of a step, but also some parameters such as ENV (enveloppe), OSC (oscillator), VCO (a kind of mixer), LFO and FLTR (filter). If you press Start while in a parameter menu, you can also get more parameters related to the first one (for example in the ENV menu, you'll get first Attack/Release, and after pressing Start you'll get Decay/Sustain, one more press on Start and it's Trig/Amplification). 
+As we've seen earlier, we can change the pitch value (note) of a step, but also some parameters such as ENV (enveloppe), OSC (oscillator), VCO (a kind of mixer), LFO and FLTR (filter). If you press Start while in a parameter menu, you can also get more parameters related to the first one (for example in the ENV menu, you'll get first Attack/Release, and after pressing Start you'll get Decay/Sustain, one more press on Start and it's Trig/Amplification). Note: on some engines, ENV is replaced by A/R.
 
 But we can also change the whole engine, using the "MAC" menu in *menu2*. The different engines are (from up to down):
 
