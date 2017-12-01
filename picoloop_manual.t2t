@@ -66,7 +66,11 @@ Picoloop is a synth and a step sequencer made by Yoyz. In this tutorial, we'll m
 
 First, get Picoloop at https://github.com/yoyz/audio/
 
-Compile it yourself, if needed (instructions are provided in the readme). You can also tweak some parameters, found in the Master.h file, before the compilation, such as the MAX_PATTERN_BY_PROJECT variable to increase the pattern slots. The Windows and PSP binaries can be found in the [Releases https://github.com/yoyz/audio/releases] tab.
+The Windows and PSP binaries can be found in the [Releases https://github.com/yoyz/audio/releases] tab.
+
+If you're using Linux, you'll probably have to compile it yourself (instructions are provided in the readme). You can also tweak some parameters, found in the Master.h file, before the compilation, such as the MAX_PATTERN_BY_PROJECT variable to increase the pattern slots. 
+
+Picoloop is not yet available for Mac OS X, but some developpements are made in this direction at the moment.
 
 The requirements for starting the application are:
 - The picoloop binary itself (called "picoloop" or "PatternPlayer_#####" after you've just compiled it, you can rename it if needed)
@@ -105,7 +109,7 @@ You can change the value of this note by holding @B@ and typing on the arrows. @
 
  {->--}[images/picoloop03.png][140]{-<--}
  
-There are 4 tracks which can play together. To change the current working track, go back to the menu with the @SELECT@ key. Use the @UP@ and @DOWN@ arrows to select the track. It will display Track/0, Track/1 etc. Now you can enter more notes in this other track.
+There are a total of 4 tracks which can play together. To change the current working track, go back to the menu with the @SELECT@ key. Use the @UP@ and @DOWN@ arrows to select the track. It will display Track/0, Track/1 etc. Now you can enter more notes in this other track.
  
 To change the sound of the current notes, select ENV in the menu, and validate with @B@, the menu will disappear, meaning you can enter notes or change values. In the ENV parameters, you can alter the sound with @B@ + arrows. Try to play with the two parameters. You end up with something like that:
  
@@ -140,6 +144,8 @@ To reload you tracks later, select a column and type @A@ + @UP@. To load an indi
 
 Now you can assemble your tracks with the order list (under the Song Position label). Go into this list with the @START@ key. 
 
+Modify the list order with the arrows and the @B@ key.
+
 You can define Loop start position with @A@ + @UP@. As soon as you define this, the song with start to play. And you can define Loop end position with @A@ + @DOWN@. Change the values of the list with @B@ + @UP@/@DOWN@ 
 
 __Important__: 
@@ -147,12 +153,15 @@ __Important__:
 + When you're in the pattern editor, the data are written in a buffer, and you must save the current pattern in the track grid before playing your song from the order list (otherwise the changes in the pattern won't be saved). 
 You can only save the pattern in the same row as the pattern number you've worked in. For example a pattern in the Track/1 can only be saved in the second row in the track grid (tracks are starting from 0, Track/0 is the first one, Track/1 is the second one)
 
-Each bank is for storing a different project (=song).
+Each bank is for storing a different project (=song). We advice you create a text file with a numbered reference to all your songs and projects, because there is no way to name a bank into picoloop.
 
-There is no option for backing up a bank you're working on, so it can be a good idea to backup your whole bank/ folder from time to time. On Linux / Unix systems, you can use a script like this from the command line:
+You can choose your bank at picoloop start up, otherwise use the 'bank' menu, select the bank number to load with the @B@ key, then press the @START@ key.
+
+There is no option for backing up a bank you're working on, so it can be a good idea to save your whole bank/ folder from time to time. On Linux / Unix systems, you can use a script like this from the command line:
 
 ``` zip -r bank_picoloop_`date +%Y-%m-%d_%H:%M`.zip bank
 
+On MS Windows you can right-clic on the 'bank' folder and zip it, then rename it with the current date.
 
 To record your music, you can either (obviously) plug a recorder to the line-out of your computer or device, but you can also set this environment setting before starting picoloop:
 
@@ -178,11 +187,13 @@ But we can also change the whole engine, using the "MAC" menu in //menu2//. The 
 - PBS : PBSynth, another soustractive synth with 2 oscillators (lightweight).
 - Pdrum : Picodrum, for making rythms (kicks, hats, snares...)
 - OPL2 : FM synthesis
+- //LGPT : sampler using the little piggy tracker engine (in development, only available in latest releases of picoloop)//
 
-On some less powerful machines, the high ressources engines are not enabled.
-
+On some less powerful machines (PSP, raspberry pi), the high ressources engines are not enabled.
 
 Refer to the picoloop README for all the parameters or experiment yourself.
+
+There is a thread about Picoloop on the Chipmusic.org forum: https://chipmusic.org/forums/topic/13624/picoloop-nanoloop-clone/
 
 
 
