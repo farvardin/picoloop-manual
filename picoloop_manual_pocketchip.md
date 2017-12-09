@@ -131,6 +131,47 @@ Refer to the picoloop README for all the parameters or experiment yourself.
 
 There is a thread about **Picoloop** on the Chipmusic.org forum: https://chipmusic.org/forums/topic/13624/picoloop-nanoloop-clone/
 
+#### Using a gamepad on computers 
+
+You can use a gamepad instead of the keyboard to make music with picoloop. This tip will work on linux (PC, raspberry, picoloop version).
+
+This example with work with SNES-like USB gamepad you can get for a few euros on ebay.
+
+Install qjoypad and put those files into your ~/.qjoypad3 folder:
+
+**layout:**
+
+    picoloop
+
+**picoloop.lyt:**
+
+    # QJoyPad 4.1 Layout File
+    
+    Joystick 1 {
+    	Axis 1: +key 114, -key 113
+    	Axis 2: +key 116, -key 111
+    	Button 1: key 62
+    	Button 2: key 37
+    	Button 3: key 64
+    	Button 4: key 105
+    	Button 5: key 22
+    	Button 6: key 23
+    	Button 9: key 9
+    	Button 10: key 36
+    }
+    
+
+On debian/ubuntu/linux mint systems you can just do:
+
+    sudo apt install qjoypad
+    cd
+    mkdir .qjoypad3
+    cd .qjoypad3/
+    wget https://raw.githubusercontent.com/farvardin/picoloop-manual/master/tools/qjoypad/.qjoypad3/layout
+    https://raw.githubusercontent.com/farvardin/picoloop-manual/master/tools/qjoypad/.qjoypad3/picoloop.lyt
+
+Then plug your gamepad and start qjoypad. You might need to select the picoloop layout in the menu in the systemtray.
+
 ## Picoloop Memo (PocketChip version) 
 
  ![](images/picoloop_logo_small.png)
